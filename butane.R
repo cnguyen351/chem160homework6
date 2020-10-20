@@ -1,0 +1,11 @@
+V=3.0
+n=1.0
+Vbar=V/n
+T=370.0
+a=16.44
+B=0.07245
+R=0.081345
+first=R*T/(Vbar-B)
+second=(a)/((Vbar*(Vbar+B))+B*(Vbar-B))
+P=first-second
+cat("Peng-Robinson equation of state=",P,"\n")
